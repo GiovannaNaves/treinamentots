@@ -55,10 +55,11 @@ export function Login() {
                             required
                             fullWidth
                             id="email"
-                            label="Email Adress"
+                            label="Email"
                             name="email"
                             autoComplete="email"
                             autoFocus
+                            variant="standard"
 
                         />
                         <TextField 
@@ -66,9 +67,10 @@ export function Login() {
                             required
                             fullWidth
                             id="password"
-                            label="Password"
+                            label="Senha"
                             name="password"
                             autoComplete="current-password"
+                            variant="standard"
 
                         />
 
