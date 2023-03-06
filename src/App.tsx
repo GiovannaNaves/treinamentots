@@ -3,6 +3,7 @@ import { Login } from './pages/Login'
 import { createTheme, ThemeProvider } from "@mui/material/styles"
 import CssBaseline from "@mui/material/CssBaseline"
 import { ptBR } from "@mui/material/locale"
+import { AppRoutes } from './routes/AppRoutes';
 
 function App() {
 
@@ -39,7 +40,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Login />
+      <AppRoutes />
     </ThemeProvider>
   )
 }

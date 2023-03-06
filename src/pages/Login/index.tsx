@@ -1,8 +1,16 @@
 import { Container, Paper, Box, Typography, TextField, FormControlLabel, Checkbox, Button, Grid, Link } from "@mui/material"
 import { Image } from "mui-image"
+import { useNavigate } from "react-router-dom";
 import Logo from "../../assets/logo.svg"
 
 export function Login() {
+
+    const navigate = useNavigate();
+    
+    function handleSubmit( event: React.FormEvent<HTMLFormElement>) {
+        event.preventDefault();
+        navigate("../");
+    }
 
     return(
         <Container
@@ -49,6 +57,7 @@ export function Login() {
                         component="form"
                         noValidate
                         sx={{ mt: 1}}
+                        onSubmit={handleSubmit}
                     >
                         <TextField 
                             margin="normal"
